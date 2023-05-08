@@ -35,4 +35,8 @@ module Default
     put_beeper
   end
 
+def beep_move
+    move
+    pick_beeper
+  end
 end
