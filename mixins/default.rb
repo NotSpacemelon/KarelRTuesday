@@ -39,4 +39,18 @@ def beep_move
     move
     pick_beeper
   end
+
+  def put_6_beepers
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+  end
+
+  def put_2_beepers
+    put_beeper
+    put_beeper
+  end
 end
