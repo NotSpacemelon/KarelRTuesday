@@ -49,8 +49,141 @@ def beep_move
     put_beeper
   end
 
+  def mput_6_beepers
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+  end
+
+  def mput_5_beepers
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+  end
+
   def put_2_beepers
     put_beeper
     put_beeper
+  end
+
+  def put24_beepers
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+  end
+
+  def clean_column
+    beep_move
+    beep_move
+    beep_move
+    beep_move
+    beep_move
+  end
+
+  def arrange_row
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+  end
+
+  def move4
+    move
+    move
+    move
+    move
+  end
+
+  def pick2_beepers
+    pick_beeper
+    pick_beeper
+  end
+
+  def move2
+    move
+    move
+  end
+
+  def move3
+    move
+    move
+    move
+  end
+
+  def sneaky_escape
+    turn_around
+    move
+    turn_left
+    move2
+    turn_right
+    move
+    turn_left
+    move2
+  end
+
+  def operation_cadeaux
+    move
+    turn_left
+    move2
+    turn_right
+    move
+    turn_left
+    move2
+    pick2_beepers
+    turn_right 
+    move
+    pick2_beepers
+  end
+
+  def operation_whosurdaddy
+    operation_cadeaux
+    sneaky_escape
+    turn_left
+    move2
+    operation_cadeaux
+    sneaky_escape
+    turn_left
+    move2
+    operation_cadeaux
+    sneaky_escape
+  end
+
+  def great_escape
+    turn_right
+    move4
+    move3
+  end
+
+  def back_home
+    move3
+    move3
+    move3
   end
 end
