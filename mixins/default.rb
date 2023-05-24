@@ -98,6 +98,29 @@ def beep_move
     put_beeper
   end
 
+  def put20_beepers
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+    put_beeper
+  end
+
   def clean_column
     beep_move
     beep_move
@@ -121,7 +144,28 @@ def beep_move
     move
   end
 
+  def move5
+    move
+    move
+    move
+    move
+    move
+  end
+
   def pick2_beepers
+    pick_beeper
+    pick_beeper
+  end
+
+  def pick10_beepers
+    pick_beeper
+    pick_beeper
+    pick_beeper
+    pick_beeper
+    pick_beeper
+    pick_beeper
+    pick_beeper
+    pick_beeper
     pick_beeper
     pick_beeper
   end
