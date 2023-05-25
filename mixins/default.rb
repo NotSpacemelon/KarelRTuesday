@@ -30,6 +30,11 @@ module Default
     turn_around
   end
 
+  def boot
+    turn_around
+    turn_around
+  end
+
   def move_beep
     move
     put_beeper
@@ -66,9 +71,21 @@ def beep_move
     move_beep
   end
 
+  def mput_4_beepers
+    move_beep
+    move_beep
+    move_beep
+    move_beep
+  end
+
   def put_2_beepers
     put_beeper
     put_beeper
+  end
+
+  def mput_2_beepers
+    move_beep
+    move_beep
   end
 
   def put24_beepers
