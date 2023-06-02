@@ -40,9 +40,14 @@ module Default
     put_beeper
   end
 
-def beep_move
+  def beep_move
     move
     pick_beeper
+  end
+
+  def beep_move2
+    pick_beeper
+    move
   end
 
   def put_6_beepers
