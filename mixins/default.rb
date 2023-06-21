@@ -40,6 +40,20 @@ module Default
     put_beeper
   end
 
+  def move_beep2
+    put_beeper
+    move
+  end
+
+  def beep_forme
+    if any_beepers_in_beeper_bag?
+      put_beeper
+      move
+    elsif !any_beepers_in_beeper_bag?
+      move
+    end
+  end
+
   def beep_move
     move
     pick_beeper

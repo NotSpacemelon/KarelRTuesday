@@ -54,4 +54,5 @@ module SensorPack
    def next_to_a_robot?
     return neighbors.length > 0
   end
+
 end
